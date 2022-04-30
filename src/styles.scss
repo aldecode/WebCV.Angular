@@ -1,0 +1,35 @@
+@import 'assets/styles/general';
+@import 'assets/styles/typography';
+@import 'assets/styles/utility';
+
+@import 'assets/styles/variables/media';
+@import 'assets/styles/variables/mixins';
+@import 'assets/styles/variables/vars';
+
+body {
+  background-color:hsla(50,0%,0%,1);
+
+  background-image: url("assets/images/mesh (1).png");
+  animation: mix-bg 30s ease infinite;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 125% 125%;
+  height: 100vh;
+  margin: 0;
+}
+
+//Glass effect
+.glass-dark {
+  backdrop-filter: blur(80px) saturate(150%);
+  -webkit-backdrop-filter: blur(50px) saturate(150%);
+  background-color: var(--color-dark-background);
+  border-radius: var(--radius-20);
+}
+
+.glass-light {
+  backdrop-filter: blur(20px) saturate(100%);
+  -webkit-backdrop-filter: blur(20px) saturate(100%);
+  background-color: var(--color-light-background);
+  border-radius: var(--radius-20);
+}

@@ -1,0 +1,157 @@
+@import 'variables/media';
+@import 'variables/mixins';
+@import 'variables/vars';
+
+body, button {
+  color: var(--color-dark-paragraph);
+  font-family: var(--font-family);
+  font-size: var(--font-base-size);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark-heading);
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: rem(24px);
+  margin-bottom: rem(20px);
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(22px);
+  }
+}
+
+h3 {
+  font-size: rem(18px);
+  margin-bottom: rem(8px);
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(16px);
+  }
+}
+
+h4 {
+  font-size: rem(16px);
+  margin-bottom: rem(13px);
+  font-weight: 500;
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(14px);
+  }
+}
+
+h5 {
+  font-size: rem(14px);
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(12px);
+  }
+}
+
+h6 {
+  font-size: rem(12px);
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(10px);
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+.badge {
+  font-size: rem(12px);
+  font-weight: 300;
+  line-height: 1;
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(11px);
+  }
+}
+
+.ju-title {
+  font-size: rem(36px);
+  margin-bottom: rem(20px);
+  position: relative;
+
+  &::before {
+    content: '';
+    box-shadow: 0 0 10px var(--color-dark-neon-glow);
+    background: var(--color-dark-heading);
+    border-radius: rem(8px);
+    height: rem(5px);
+    width: rem(40px);
+    @include position(absolute, $left: 0, $bottom: rem(-8px));
+    z-index: 1;
+  }
+
+  &-portfolio {
+    margin-left: 16px;
+    font-size: rem(36px);
+    margin-bottom: rem(20px);
+    position: relative;
+
+    &::before {
+      content: '';
+      box-shadow: 0 0 10px var(--color-dark-neon-glow);
+      background: var(--color-dark-heading);
+      border-radius: rem(8px);
+      height: rem(5px);
+      width: rem(40px);
+      @include position(absolute, $left: 0, $bottom: rem(-8px));
+      z-index: 1;
+    }
+
+    @media only screen and (max-width: $large-xl) {
+      margin-left: 12px;
+    }
+  }
+
+  &-blog {
+    margin-left: 16px;
+    font-size: rem(36px);
+    margin-bottom: rem(20px);
+    position: relative;
+
+    &::before {
+      content: '';
+      box-shadow: 0 0 10px var(--color-dark-neon-glow);
+      background: var(--color-dark-heading);
+      border-radius: rem(8px);
+      height: rem(5px);
+      width: rem(40px);
+      @include position(absolute, $left: 0, $bottom: rem(-8px));
+      z-index: 1;
+    }
+
+    @media only screen and (max-width: $large-xl) {
+      margin-left: 12px;
+    }
+  }
+}
+
+.overhead {
+  color: var(--color-dark-paragraph);
+  font-size: rem(12px);
+  font-weight: 400;
+  display: block;
+  opacity: .7;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $small) {
+    font-size: rem(11px);
+  }
+}
+
+.text-overflow {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

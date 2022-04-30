@@ -1,0 +1,14 @@
+@import './src/assets/styles/variables/media';
+@import './src/assets/styles/variables/mixins';
+@import './src/assets/styles/variables/vars';
+
+div {
+  background: var(--color-dark-separator);
+  margin: rem(26px) 0;
+  height: 1px;
+  width: 100%;
+
+  @media only screen and (max-width: $medium) {
+    margin: 0;
+  }
+}

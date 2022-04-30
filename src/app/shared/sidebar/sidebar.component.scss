@@ -1,0 +1,226 @@
+@import './src/assets/styles/variables/vars';
+@import './src/assets/styles/variables/media';
+@import './src/assets/styles/variables/mixins';
+
+
+aside {
+  z-index: 10;
+  position: sticky;
+  padding: rem(18px);
+
+  app-vertical-separator {
+    display: none;
+  }
+
+  @media only screen and (max-width: $large-xl) {
+    display: grid;
+    grid-template-columns: 28% 1px auto;
+    text-align: start;
+    grid-gap: rem(26px);
+    padding: rem(26px);
+    margin-bottom: rem(30px);
+
+    app-horizontal-separator {
+      display: none;
+    }
+    app-vertical-separator {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: $medium) {
+    grid-template-columns: 100%;
+    margin-bottom: rem(16px);
+
+    app-horizontal-separator {
+      display: block;
+    }
+    app-vertical-separator {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $small) {
+    padding: rem(10px);
+  }
+
+  .aside-heading {
+    text-align: center;
+
+    .img-wrapper {
+      box-shadow: 0 0 rem(40px) 0 rgba(29, 23, 40, 0.5);
+      border-radius: var(--radius-20);
+
+      @media only screen and (min-width: $large-xl) {
+        margin: 1.5em;
+      }
+
+      img {
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+
+    h3 {
+      text-shadow: 0 0 16px var(--color-dark-neon-glow);
+      font-size: 1.6vw;
+      font-weight: 500;
+      margin: rem(16px) rem(0);
+      position: relative;
+
+      @media only screen and (max-width: $large-xxl) {
+        margin-bottom: rem(12px);
+        margin-left: 0;
+      }
+
+      @media only screen and (max-width: $large-xl) {
+        font-size: 2vw;
+        margin-bottom: rem(14px);
+        margin-left: 0;
+      }
+
+      @media only screen and (max-width: $large) {
+        font-size: 2.5vw;
+        margin-bottom: rem(12px);
+      }
+
+      @media only screen and (max-width: $medium) {
+        font-size: 7vw;
+        margin-bottom: rem(10px);
+      }
+      @media only screen and (max-width: $small) {
+        margin-bottom: rem(10px);
+      }
+    }
+
+    .position-title {
+      margin: 0 auto;
+      padding: 0.75em 1.5em;
+      width: max-content;
+      color: var(--color-dark-heading);
+      text-align: center;
+      vertical-align: baseline;
+      border-radius: var(--radius-8);
+      font-size: 0.9vw;
+      font-weight: 300;
+      line-height: 1;
+
+      // Empty badges collapse automatically
+      &:empty {
+        display: none;
+      }
+
+      @media only screen and (max-width: $large-xl) {
+        font-size: 1.15vw;
+      }
+
+      @media only screen and (max-width: $large) {
+        font-size: 1.3vw;
+      }
+
+      @media only screen and (max-width: $medium) {
+        font-size: 3.5vw;
+      }
+    }
+
+  }
+
+  .aside-body {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: rem(16px);
+        display: flex;
+        align-items: stretch;
+
+        .icon-box {
+          background-color: rgba(0, 0, 0, 0.15);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: rem(16px);
+          border-radius: var(--radius-12);
+
+          i {
+            text-align: center;
+            width: 1rem;
+            padding: 0 1.4rem;
+          }
+
+          @media only screen and (max-width: $large-xxl) {
+            display: none;
+          }
+
+          @media only screen and (max-width: $large-xl) {
+            display: inline-flex;
+          }
+
+        }
+
+        .overhead {
+          font-size: 0.85vw;
+        }
+
+        .list-content {
+          font-size: 1vw;
+        }
+
+        @media only screen and (max-width: $large-xl) {
+          .overhead {
+            font-size: 1.25vw;
+          }
+          .list-content {
+            font-size: 1.75vw;
+          }
+        }
+
+        @media only screen and (max-width: $large) {
+          .overhead {
+            font-size: 1.75vw;
+          }
+          .list-content {
+            font-size: 2.25vw;
+          }
+        }
+
+        @media only screen and (max-width: $medium) {
+          .overhead {
+            font-size: 3.5vw;
+          }
+          .list-content {
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+
+    .ju-social {
+      text-align: center;
+      margin-top: rem(18px);
+
+      a {
+        font-size: rem(28px);
+        color: var(--color-dark-paragraph);
+        -webkit-text-fill-color: inherit;
+        text-decoration: none;
+        margin: 0 rem(10px);
+        transition: all .05s ease-out;
+
+        &:hover {
+          color: var(--color-dark-heading);
+          filter: drop-shadow(0px 0px 8px var(--color-dark-neon-glow));
+        }
+
+        @media only screen and (max-width: $large-xl) {
+          font-size: rem(26px);
+        }
+
+        @media only screen and (max-width: $medium) {
+          font-size: rem(20px);
+        }
+      }
+    }
+  }
+}

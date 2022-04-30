@@ -1,0 +1,13 @@
+@import './src/assets/styles/variables/vars';
+@import './src/assets/styles/variables/media';
+@import './src/assets/styles/variables/mixins';
+
+.main {
+  display: grid;
+  grid-template-columns: 25% 75%;
+
+  @media only screen and (max-width: $large-xl) {
+    grid-template-columns: 100%;
+    grid-gap: rem(8px);
+  }
+}
