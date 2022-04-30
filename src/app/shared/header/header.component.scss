@@ -55,9 +55,10 @@ header {
 
       @media only screen and (max-width: $medium) {
         padding: rem(12px) 10%;
-        a {
+        a > span{
           display: none;
         }
+
         i {
           display: block;
           margin-right: 0;
@@ -74,9 +75,7 @@ header {
 
         @media only screen and (max-width: $medium) {
           padding: rem(12px) 9%;
-
         }
-
 
         .btn-icon {
           padding: 0;
