@@ -24,10 +24,6 @@ footer {
 
   h2 {
     text-align: center;
-
-    @media only screen and (max-width: $small) {
-      font-size: var(--font-base-size);
-    }
   }
 
   form {
@@ -65,8 +61,6 @@ footer {
       border: 0 solid var(--color-dark-border);
       border-radius: var(--radius-8);
       color: var(--color-dark-paragraph);
-      font-weight: 400;
-      font-size: var(--font-base-size);
       margin-bottom: rem(64px);
       padding: rem(12px);
 
@@ -84,7 +78,6 @@ footer {
       }
 
       @media only screen and (max-width: $medium) {
-        font-size: var(--font-mobile-size);
         border-radius: var(--radius-12);
       }
     }
@@ -97,10 +90,8 @@ footer {
       border-radius: var(--radius-8);
       resize: none;
       border: 0 solid var(--color-dark-border);
-      font-size: var(--font-base-size);
 
       @media only screen and (max-width: $medium) {
-        font-size: var(--font-mobile-size);
         border-radius: var(--radius-12);
       }
 
@@ -138,7 +129,6 @@ footer {
   .credentials {
     text-align: center;
     color: var(--color-dark-paragraph);
-    font-size: var(--font-base-size);
     filter: brightness(1);
 
     p {

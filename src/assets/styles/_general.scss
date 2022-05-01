@@ -1,16 +1,21 @@
+@import 'typography';
+@import 'utility';
+@import "fa-icons";
+
 @import 'variables/media';
 @import 'variables/mixins';
 @import 'variables/vars';
-@import "fa-icons";
 
-.ju-flex {
-  display: flex;
-}
 
-.ju-shadow {
-  box-shadow: 0 0 16px 0 rgba(29, 23, 40, 0.25);
-}
+body {
+  background-color: hsla(50, 0%, 0%, 1);
 
-.ju-inset-shadow {
-  box-shadow: inset 0 0 16px 0 rgba(29, 23, 40, 0.25);
+  background-image: url("../images/mesh (1).png");
+  animation: mix-bg 30s ease infinite;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 125% 125%;
+  height: 100vh;
+  margin: 0;
 }

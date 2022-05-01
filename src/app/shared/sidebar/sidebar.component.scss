@@ -62,7 +62,6 @@ aside {
 
     h3 {
       text-shadow: 0 0 16px var(--color-dark-neon-glow);
-      font-size: 1.6vw;
       font-weight: 500;
       margin: rem(16px) rem(0);
       position: relative;
@@ -73,18 +72,15 @@ aside {
       }
 
       @media only screen and (max-width: $large-xl) {
-        font-size: 2vw;
         margin-bottom: rem(14px);
         margin-left: 0;
       }
 
       @media only screen and (max-width: $large) {
-        font-size: 2.5vw;
         margin-bottom: rem(12px);
       }
 
       @media only screen and (max-width: $medium) {
-        font-size: 7vw;
         margin-bottom: rem(10px);
       }
       @media only screen and (max-width: $small) {
@@ -100,7 +96,6 @@ aside {
       text-align: center;
       vertical-align: baseline;
       border-radius: var(--radius-8);
-      font-size: 0.9vw;
       font-weight: 300;
       line-height: 1;
 
@@ -108,20 +103,7 @@ aside {
       &:empty {
         display: none;
       }
-
-      @media only screen and (max-width: $large-xl) {
-        font-size: 1.15vw;
-      }
-
-      @media only screen and (max-width: $large) {
-        font-size: 1.3vw;
-      }
-
-      @media only screen and (max-width: $medium) {
-        font-size: 3.5vw;
-      }
     }
-
   }
 
   .aside-body {
@@ -155,42 +137,6 @@ aside {
           @media only screen and (max-width: $large-xl) {
             display: inline-flex;
           }
-
-        }
-
-        .overhead {
-          font-size: 0.85vw;
-        }
-
-        .list-content {
-          font-size: 1vw;
-        }
-
-        @media only screen and (max-width: $large-xl) {
-          .overhead {
-            font-size: 1.25vw;
-          }
-          .list-content {
-            font-size: 1.75vw;
-          }
-        }
-
-        @media only screen and (max-width: $large) {
-          .overhead {
-            font-size: 1.75vw;
-          }
-          .list-content {
-            font-size: 2.25vw;
-          }
-        }
-
-        @media only screen and (max-width: $medium) {
-          .overhead {
-            font-size: 3.5vw;
-          }
-          .list-content {
-            font-size: 4vw;
-          }
         }
       }
     }
@@ -200,7 +146,6 @@ aside {
       margin-top: rem(18px);
 
       a {
-        font-size: rem(28px);
         color: var(--color-dark-paragraph);
         -webkit-text-fill-color: inherit;
         text-decoration: none;
@@ -210,14 +155,6 @@ aside {
         &:hover {
           color: var(--color-dark-heading);
           filter: drop-shadow(0px 0px 8px var(--color-dark-neon-glow));
-        }
-
-        @media only screen and (max-width: $large-xl) {
-          font-size: rem(26px);
-        }
-
-        @media only screen and (max-width: $medium) {
-          font-size: rem(20px);
         }
       }
     }
