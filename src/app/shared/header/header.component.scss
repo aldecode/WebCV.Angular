@@ -6,6 +6,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: rem(18px);
+
   @media only screen and (max-width: $medium) {
     border-radius: var(--radius-16);
   }
@@ -31,18 +32,26 @@ header {
       align-items: center;
       padding: 0.5em 1em;
       border-radius: var(--radius-12);
+      color: var(--color-dark-heading);
+      text-decoration: none;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.10);
         text-shadow: 0 0 10px var(--color-dark-neon-glow);
+        background-color: rgba(0, 0, 0, 0.10);
         filter: brightness(1.2);
-        transition: all .07s ease-out;
+        transition: all .1s linear;
+        cursor: pointer;
+
+        .btn-download {
+          text-shadow: 0 0 10px var(--color-dark-neon-glow);
+          transition: all .1s linear;
+          cursor: pointer;
+        }
       }
 
-      a {
-        display: block;
-        color: var(--color-dark-heading);
-        text-decoration: none;
+      &:active {
+        box-shadow: 0 0 15px var(--color-dark-background);
+        transition: all .05s ease-in-out;
       }
 
       i, .btn-icon {
@@ -55,7 +64,8 @@ header {
 
       @media only screen and (max-width: $medium) {
         padding: rem(12px) 10%;
-        a > span{
+
+        span{
           display: none;
         }
 
@@ -85,9 +95,7 @@ header {
           border: none;
           float: right;
           border-radius: var(--radius-12);
-
           background: none;
-          transition: all .07s ease;
 
           &:hover {
             cursor: pointer;
@@ -105,11 +113,10 @@ header {
         border-radius: var(--radius-12);
 
         background: none;
-        transition: all .07s ease;
+        transition: all .1s linear;
 
         &:hover {
-          text-shadow: 0 0 10px var(--color-dark-neon-glow);
-          cursor: pointer;
+
         }
 
         i {

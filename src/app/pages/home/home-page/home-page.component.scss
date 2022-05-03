@@ -1,0 +1,18 @@
+@import '../../../../assets/styles/variables/vars';
+@import '../../../../assets/styles/variables/media';
+@import '../../../../assets/styles/variables/mixins';
+@import "../home";
+
+.main {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-gap: rem(18px);
+  @media only screen and (max-width: $large-xl) {
+    grid-template-columns: 100%;
+    grid-gap: rem(8px);
+  }
+}
+
+//Index
+
+

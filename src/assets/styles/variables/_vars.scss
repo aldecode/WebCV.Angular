@@ -10,7 +10,7 @@ $baseSystemFontSize: 16px;
   --font-mobile-size: 11px;
 
   // Color Dark Theme
-  --color-dark-background: rgba(23, 28, 38, 0.2);
+  --color-dark-background: rgba(41, 55, 75, 0.15);
   --color-dark-heading: #FCFCFC;;
   --color-dark-paragraph: #D6D6D6;
   --color-dark-accent: rgba(164, 229, 250, 0.8);
@@ -19,16 +19,6 @@ $baseSystemFontSize: 16px;
   --color-dark-border: rgba(255, 255, 255, 0.125);
   --color-dark-separator: rgba(255, 255, 255, 0.125);
   --color-dark-error: #B84C4C;
-
-  /* Dark theme back-up
-   --color-dark-background: rgba(17, 20, 40, 0.25);
-   --color-dark-heading: #FCFCFC;;
-   --color-dark-paragraph: #D6D6D6;
-   --color-dark-accent: rgba(164, 229, 250, 0.8);
-   --color-dark-neon-glow: rgb(0, 196, 255);
-   --color-dark-gray-glow: rgba(255, 255, 255, 0.2);
-   --color-dark-border: rgba(0, 0, 0, 0);
-   --color-dark-error: #B84C4C;*/
 
   // Radius
   --radius-128: 128px;
@@ -39,26 +29,4 @@ $baseSystemFontSize: 16px;
   --radius-14: 14px;
   --radius-12: 12px;
   --radius-8: 8px;
-
-  //Background images
-  /*--bg-1: url("../../Images/bg-images/bg-1.jpg");
-  --bg-2: url("../../Images/bg-images/bg-2.jpg");
-  --bg-3: url("../../Images/bg-images/bg-3.jpg");
-  --bg-4: url("../../Images/bg-images/bg-4.jpg");
-  --bg-5: url("../../Images/bg-images/bg-5.jpg");
-  --bg-6: url("../../Images/bg-images/bg-6.jpg");
-  --bg-7: url("../../Images/bg-images/bg-7.jpg");
-  --bg-8: url("../../Images/bg-images/bg-8.jpg");
-  --bg-9: url("../../Images/bg-images/bg-9.jpg");
-  --bg-10: url("../../Images/bg-images/bg-10.jpg");
-  --bg-11: url("../../Images/bg-images/bg-11.jpg");
-  --bg-12: url("../../Images/bg-images/bg-12.jpg");
-  --bg-13: url("../../Images/bg-images/bg-13.jpg");
-  --bg-14: url("../../Images/bg-images/bg-14.jpg");
-  --bg-15: url("../../Images/bg-images/bg-15.jpg");
-  --bg-16: url("../../Images/bg-images/bg-16.jpg");
-  --bg-17: url("../../Images/bg-images/bg-17.jpg");
-  --bg-18: url("../../Images/bg-images/bg-18.jpg");
-  --bg-19: url("../../Images/bg-images/bg-19.jpg");
-  --bg-20: url("../../Images/bg-images/bg-20.jpg");*/
 }

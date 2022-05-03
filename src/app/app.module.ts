@@ -4,7 +4,9 @@ import { AppComponent } from './app.component';
 import { SharedModule } from "./shared/shared.module";
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { PagesModule } from './pages/pages.module';
+import { HomeModule } from './pages/home/home.module';
+import { PortfolioModule } from './pages/portfolio/portfolio.module';
+import { BlogModule } from './pages/blog/blog.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { PagesModule } from './pages/pages.module';
     SharedModule,
     RouterModule,
     AppRoutingModule,
-    PagesModule
+    HomeModule,
+    PortfolioModule,
+    BlogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

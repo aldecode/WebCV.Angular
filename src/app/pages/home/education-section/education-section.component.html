@@ -1,0 +1,9 @@
+<section class="glass-dark">
+  <h2>Education</h2>
+  <div *ngFor="let education of educationList" class="section-item">
+    <h3 class="section-item-title">{{education.educationalInstitution}}</h3>
+    <span>{{education.degree}} degree of {{education.speciality}}</span>
+    <span class="section-item-date">{{education.startYear}} - {{education.endYear}}</span>
+    <p class="section-item-content">{{education.description}}</p>
+  </div>
+</section>

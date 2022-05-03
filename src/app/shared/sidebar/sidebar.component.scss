@@ -47,7 +47,7 @@ aside {
     text-align: center;
 
     .img-wrapper {
-      box-shadow: 0 0 rem(40px) 0 rgba(29, 23, 40, 0.5);
+      box-shadow: 0 0 rem(40px) 0 var(--color-dark-background)/*rgba(29, 23, 40, 0.5)*/;
       border-radius: var(--radius-20);
 
       @media only screen and (min-width: $large-xl) {
@@ -115,6 +115,15 @@ aside {
         margin-bottom: rem(16px);
         display: flex;
         align-items: stretch;
+
+        div > .overhead {
+          font-size: 14px;
+          color: var(--color-dark-paragraph);
+          font-weight: 400;
+          display: block;
+          opacity: .7;
+          text-transform: uppercase;
+        }
 
         .icon-box {
           background-color: rgba(0, 0, 0, 0.15);
