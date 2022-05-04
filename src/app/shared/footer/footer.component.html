@@ -1,9 +1,9 @@
 <footer>
   <h2>Contact with me</h2>
   <form>
-    <input #userName class="name-input glass-dark" type="text" name="name" required="required" autocomplete="on" placeholder="Full name">
-    <input #userEmail class="surname-input glass-dark" type="email" name="email" required="required" autocomplete="on" placeholder="Email address">
-    <textarea #userMessage class="message-area glass-dark" rows="6" name="message" required="required" autocomplete="on" placeholder="Your message"></textarea>
+    <input #userName class="name-input" type="text" name="name" required="required" autocomplete="on" placeholder="Full name">
+    <input #userEmail class="surname-input" type="email" name="email" required="required" autocomplete="on" placeholder="Email address">
+    <textarea #userMessage class="message-area" rows="7" name="message" required="required" autocomplete="off" placeholder="Your message"></textarea>
     <button (click)="sendEmail(userName.value, userEmail.value, userMessage.value)" type="submit" class="submit-button glass-dark">Send message</button>
   </form>
   <div class="credentials">

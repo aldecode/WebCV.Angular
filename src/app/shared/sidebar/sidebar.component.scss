@@ -59,7 +59,7 @@ aside {
       border-radius: var(--radius-20);
 
       @media only screen and (min-width: $large-xl) {
-        margin: 1.5em;
+        margin: 0 2em;
       }
 
       img {
@@ -68,7 +68,7 @@ aside {
       }
     }
 
-    h3 {
+    h2 {
       text-shadow: 0 0 16px var(--color-dark-neon-glow);
       font-weight: 500;
       margin: rem(16px) rem(0);
@@ -97,10 +97,12 @@ aside {
     }
 
     .position-title {
+      font-size: 14px;
       margin: 0 auto;
-      padding: 0.75em 1.5em;
+      padding: 0.6em 1.2em;
       width: max-content;
       color: var(--color-dark-heading);
+      background-color: var(--color-dark-block-background);
       text-align: center;
       vertical-align: baseline;
       border-radius: var(--radius-8);
@@ -134,7 +136,7 @@ aside {
         }
 
         .icon-box {
-          background-color: rgba(0, 0, 0, 0.15);
+          background-color: var(--color-dark-block-background);
           display: inline-flex;
           align-items: center;
           justify-content: center;
@@ -163,7 +165,7 @@ aside {
 
       a {
         color: var(--color-dark-paragraph);
-        font-sizr: rem(20px);
+        font-size: rem(20px);
         -webkit-text-fill-color: inherit;
         text-decoration: none;
         margin: 0 rem(10px);

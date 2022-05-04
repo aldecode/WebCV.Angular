@@ -6,8 +6,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: rem(18px);
-  background-color: var(--color-dark-block-background);
-  border-radius: var(--radius-20);
+
 
   @media only screen and (max-width: $medium) {
     border-radius: var(--radius-16);
