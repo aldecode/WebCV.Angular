@@ -6,6 +6,8 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: rem(18px);
+  background-color: var(--color-dark-block-background);
+  border-radius: var(--radius-20);
 
   @media only screen and (max-width: $medium) {
     border-radius: var(--radius-16);
@@ -36,21 +38,21 @@ header {
       text-decoration: none;
 
       &:hover {
-        text-shadow: 0 0 10px var(--color-dark-neon-glow);
-        background-color: rgba(0, 0, 0, 0.10);
+        text-shadow: 0 0 10px var(--color-dark-neon-glow),  0 0 20px var(--color-dark-neon-glow),  0 0 25px var(--color-dark-neon-glow);
         filter: brightness(1.2);
         transition: all .1s linear;
         cursor: pointer;
 
         .btn-download {
-          text-shadow: 0 0 10px var(--color-dark-neon-glow);
+          text-shadow: 0 0 10px var(--color-dark-neon-glow),  0 0 20px var(--color-dark-neon-glow),  0 0 25px var(--color-dark-neon-glow);
+          filter: brightness(1.2);
           transition: all .1s linear;
           cursor: pointer;
         }
       }
 
       &:active {
-        box-shadow: 0 0 15px var(--color-dark-background);
+        box-shadow: 0 0 15px var(--color-dark-wrapper-background);
         transition: all .05s ease-in-out;
       }
 

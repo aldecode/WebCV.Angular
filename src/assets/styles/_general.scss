@@ -8,13 +8,12 @@
 
 
 body {
-  background-color: hsla(50, 0%, 0%, 1);
-  background-image: url("../images/mesh (1).png");
-  animation: mix-bg 30s ease infinite;
+  background-color: hsla(50, 0%, 0%, 1) ;
+  background-image: url("../images/bg-2.jpg") ;
+  //animation: mix-bg 30s ease infinite;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 200% 1000%;
-  height: 100vh;
+  background-size: cover;
   margin: 0;
 }

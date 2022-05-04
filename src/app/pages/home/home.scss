@@ -5,6 +5,8 @@
 section {
   padding: rem(26px);
   margin-bottom: rem(18px);
+  background-color: var(--color-dark-block-background);
+  border-radius: var(--radius-20);
 
  /* &:last-child {
     margin: 0;
@@ -28,6 +30,7 @@ section {
     border-left: rem(2px) solid var(--color-dark-paragraph);
     padding-left: rem(16px);
     padding-bottom: rem(26px);
+    position: relative;
 
     &::before {
       width: 10px;
@@ -38,7 +41,7 @@ section {
       content: '';
       box-shadow: 0 0 12px var(--color-dark-neon-glow);
       background-color: var(--color-dark-heading);
-      left: 21px;
+      left: -7px;
 
       @media only screen and (max-width: $small) {
         left: 11px;
@@ -48,6 +51,10 @@ section {
     &:last-child {
       border: 0;
       padding-bottom: 0;
+
+      &::before {
+        left: -5px;
+      }
     }
 
     h3 {

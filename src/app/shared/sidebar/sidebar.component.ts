@@ -10,7 +10,7 @@ export class SidebarComponent implements OnInit {
   sidebarInfo = {
     firstName: 'Nikita',
     lastName: 'Reshetnik',
-    positionTitle: 'Trainee .NET Developer',
+    positionTitle: 'Junior .NET Developer',
     city: 'Kyiv',
     country: 'Ukraine',
     email: 'reshetnik.nikita@gmail.com',

@@ -10,12 +10,31 @@ export class ExperienceSectionComponent implements OnInit {
 
   experienceList: Array<IExperienceModel> = [
     {
+      positionTitle: 'Junior .NET Developer',
+      company: 'ELEKS',
+      startMonth: 'May',
+      startYear: '2022',
+      endMonth: '',
+      endYear: '',
+      description: {
+        responsibilities: [
+          'Implementing new features in API',
+          'Writing Unit and Integration tests',
+          'Finding and fixing bugs',
+          'Investigation logs and finding the causes of Warnings and Errors',
+          'Creating wiki pages about the investigation',
+        ],
+        aboutProject: '',
+        toolsAndTechnologies: '.NET 6, ASP.NET Web API, MediatR, nUnit, Microservices, MS SQL Server, AWS, Jenkins, Kibana, Grafana, Git/GitLab'
+      }
+    },
+    {
       positionTitle: 'Trainee .NET Developer',
       company: 'ELEKS',
       startMonth: 'December',
       startYear: '2021',
-      endMonth: '',
-      endYear: '',
+      endMonth: 'May',
+      endYear: '2022',
       description: {
         responsibilities: [
           'Implementing new features in API',

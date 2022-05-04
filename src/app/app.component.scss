@@ -3,7 +3,7 @@
 @import './src/assets/styles/variables/vars';
 
 .wrapper {
-  margin: rem(26px) rem(100px);
+  margin: rem(26px) rem(100px) 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,18 @@
 }
 
 .main-container {
+  border-radius: var(--radius-20);
+  background-color: var(--color-dark-wrapper-background);
+  backdrop-filter: blur(20px) saturate(0);
+  -webkit-backdrop-filter: blur(20px) saturate(0);
+  box-shadow:
+    0 0 7.7px rgba(0, 0, 0, 0.033),
+    0 0 16.1px rgba(0, 0, 0, 0.063),
+    0 0 26.9px rgba(0, 0, 0, 0.091),
+    0 0 45.9px rgba(0, 0, 0, 0.119),
+    0 0 110px rgba(0, 0, 0, 0.15)
+;
+
   padding: rem(18px);
   flex: 1;
 

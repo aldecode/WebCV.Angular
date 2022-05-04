@@ -47,7 +47,15 @@ aside {
     text-align: center;
 
     .img-wrapper {
-      box-shadow: 0 0 rem(40px) 0 var(--color-dark-background)/*rgba(29, 23, 40, 0.5)*/;
+      box-shadow:
+        0px 0px 3.4px rgba(0, 0, 0, 0.033),
+        0px 0px 7px rgba(0, 0, 0, 0.063),
+        0px 0px 11.7px rgba(0, 0, 0, 0.091),
+        0px 0px 20px rgba(0, 0, 0, 0.119),
+        0px 0px 48px rgba(0, 0, 0, 0.15);
+
+      //background-color: var(--color-dark-block-background);
+
       border-radius: var(--radius-20);
 
       @media only screen and (min-width: $large-xl) {
@@ -132,11 +140,10 @@ aside {
           justify-content: center;
           margin-right: rem(16px);
           border-radius: var(--radius-12);
-
+          width: rem(48px);
           i {
             text-align: center;
-            width: 1rem;
-            padding: 0 1.4rem;
+            margin: 0 auto;
           }
 
           @media only screen and (max-width: $large-xxl) {
@@ -156,6 +163,7 @@ aside {
 
       a {
         color: var(--color-dark-paragraph);
+        font-sizr: rem(20px);
         -webkit-text-fill-color: inherit;
         text-decoration: none;
         margin: 0 rem(10px);
