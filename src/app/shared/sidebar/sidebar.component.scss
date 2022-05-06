@@ -123,12 +123,17 @@ aside {
         align-items: stretch;
 
         div > .overhead {
-          font-size: 14px;
+          font-size: rem(12px);
+          line-height: 1.2;
           color: var(--color-dark-paragraph);
           font-weight: 400;
           display: block;
           opacity: .7;
           text-transform: uppercase;
+        }
+
+        div > .list-content {
+          font-size: rem(15px);
         }
 
         .icon-box {

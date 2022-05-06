@@ -85,6 +85,10 @@ section {
       margin-top: rem(5px);
       margin-bottom: 0;
       padding-right: rem(30px);
+
+      p {
+        cursor: text;
+      }
     }
 
     &-toggler {
