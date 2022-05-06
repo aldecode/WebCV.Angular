@@ -1,4 +1,4 @@
-export interface IExperienceModel {
+export interface ExperienceModel {
   positionTitle: string,
   company: string,
   startMonth: string,

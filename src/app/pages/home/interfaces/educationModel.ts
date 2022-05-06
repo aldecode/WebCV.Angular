@@ -1,4 +1,4 @@
-export interface IEducationModel {
+export interface EducationModel {
   educationalInstitution: string,
   degree: string,
   speciality: string,

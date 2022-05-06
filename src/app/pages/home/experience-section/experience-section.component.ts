@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IExperienceModel } from '../interfaces/experienceModel';
+import { ExperienceModel } from '../interfaces/experienceModel';
 
 @Component({
   selector: 'app-experience-section',
@@ -8,7 +8,7 @@ import { IExperienceModel } from '../interfaces/experienceModel';
 })
 export class ExperienceSectionComponent implements OnInit {
 
-  experienceList: Array<IExperienceModel> = [
+  experienceList: Array<ExperienceModel> = [
     {
       positionTitle: 'Junior .NET Developer',
       company: 'ELEKS',

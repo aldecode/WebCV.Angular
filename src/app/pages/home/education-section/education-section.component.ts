@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { IEducationModel } from '../interfaces/educationModel';
+import { EducationModel } from '../interfaces/educationModel';
 
 @Component({
   selector: 'app-education-section',
@@ -26,7 +26,7 @@ export class EducationSectionComponent implements OnInit {
     }
   }
 
-  educationList: Array<IEducationModel> = [
+  educationList: Array<EducationModel> = [
     {
       educationalInstitution: 'State University of Telecommunication',
       degree: 'Bachelor',

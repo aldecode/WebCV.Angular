@@ -7,12 +7,14 @@ section {
     padding: rem(10px);
   }
 
-  app-vertical-separator {
-    margin: rem(26px) auto;
-  }
-
   .skill-wrapper {
     display: flex;
+    gap: rem(12px);
+
+
+    &:nth-child(even) {
+        margin: rem(26px) auto;
+    }
 
     @media only screen and (max-width: $small) {
       display: flex;
@@ -20,7 +22,7 @@ section {
     }
 
     .skill-group {
-      width: 31%;
+      width: 100%;
 
       @media only screen and (max-width: $small) {
         width: 100%;
@@ -64,13 +66,11 @@ section {
             overflow: hidden;
             position: relative;
             height: rem(8px);
-            width: 33%;
+            width: 100%;
             transition: width .6s ease-in-out;
-            z-index: 1;
 
             &.active {
               background: var(--color-dark-heading);
-              //box-shadow: 0 0 4px var(--color-dark-neon-glow);
               @extend .box-glow-12
             }
 
