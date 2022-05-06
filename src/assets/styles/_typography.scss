@@ -1,6 +1,7 @@
 @import 'variables/media';
 @import 'variables/mixins';
 @import 'variables/vars';
+@import "utility";
 
 body, button {
   color: var(--color-dark-paragraph);
@@ -23,7 +24,7 @@ h1 {
 
   &::before {
     content: '';
-    box-shadow: 0 0 10px var(--color-dark-neon-glow);
+    @extend .box-glow-12;
     background: var(--color-dark-heading);
     border-radius: rem(8px);
     height: rem(5px);

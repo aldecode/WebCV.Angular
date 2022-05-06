@@ -1,19 +1,8 @@
-@import '../../../assets/styles/variables/vars';
-@import '../../../assets/styles/variables/media';
-@import '../../../assets/styles/variables/mixins';
+@import '../../../assets/styles/utility';
 
 section {
   padding: rem(26px);
   margin-bottom: rem(18px);
-
- /* &:last-child {
-    margin: 0;
-    padding: rem(18px);
-
-    @media only screen and (max-width: $large-xl) {
-      padding: rem(10px);
-    }
-  }*/
 
   @media only screen and (max-width: $medium) {
     margin-bottom: rem(14px);
@@ -27,8 +16,22 @@ section {
   .section-item {
     border-left: rem(2px) solid var(--color-dark-separator);
     padding-left: rem(16px);
-    padding-bottom: rem(26px);
+    padding-bottom: rem(12px);
     position: relative;
+
+    i {
+      opacity: 0;
+      text-align: center;
+      margin: auto 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      i {
+        opacity: 1;
+        transition: opacity 0.1s ease-out;
+      }
+    }
 
     &::before {
       width: 10px;
@@ -37,13 +40,9 @@ section {
       border-radius: 50%;
       position: absolute;
       content: '';
-      box-shadow: 0 0 12px var(--color-dark-neon-glow);
+      @extend .box-glow-12;
       background-color: var(--color-dark-heading);
       left: -7px;
-
-      @media only screen and (max-width: $small) {
-        left: 11px;
-      }
     }
 
     &:last-child {
@@ -66,6 +65,11 @@ section {
       text-transform: uppercase;
     }
 
+    &-head {
+      display: flex;
+      width: 100%;
+    }
+
     &-date {
       &::before {
         color: var(--color-dark-paragraph);
@@ -76,9 +80,18 @@ section {
     }
 
     &-content {
+      //overflow: hidden;
       color: var(--color-dark-paragraph);
       margin-top: rem(5px);
       margin-bottom: 0;
+      padding-right: rem(30px);
+    }
+
+    &-toggler {
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      margin-left: auto
     }
   }
 }

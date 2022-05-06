@@ -1,10 +1,16 @@
 <section class="dark-block">
   <h2>Experience</h2>
   <div *ngFor="let experience of experienceList" class="section-item">
-    <h3 class="section-item-title">{{experience.positionTitle}}</h3>
-    <span>{{experience.company}}</span>
-    <span class="section-item-date">{{experience.startMonth}} {{experience.startYear}} - {{experience.endMonth && experience.endYear ? experience.endMonth + ' ' + experience.endYear : 'Present'}}</span>
-
+    <div class="section-item-head">
+      <div>
+        <h3 class="section-item-title">{{experience.positionTitle}}</h3>
+        <span>{{experience.company}}</span>
+        <span class="section-item-date">{{experience.startMonth}} {{experience.startYear}} - {{experience.endMonth && experience.endYear ? experience.endMonth + ' ' + experience.endYear : 'Present'}}</span>
+      </div>
+      <div class="section-item-toggler">
+        <i class="fa-angle-down fa-solid"></i>
+      </div>
+    </div>
     <div class="section-item-content">
 
       <h5 *ngIf="experience.description.responsibilities">Responsibilities:</h5>

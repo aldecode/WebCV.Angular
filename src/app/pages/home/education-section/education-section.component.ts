@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IEducationModel } from '../interfaces/educationModel';
 
 @Component({
@@ -7,6 +7,24 @@ import { IEducationModel } from '../interfaces/educationModel';
   styleUrls: ['./education-section.component.scss']
 })
 export class EducationSectionComponent implements OnInit {
+  @Input() collapsing= true;
+
+  expanded = new Set<number>();
+
+  getToggleState = (index: number) => {
+    return this.toggleState.bind(this, index)
+  }
+
+  toggleState = (index: number) => {
+    if (this.expanded.has(index)) {
+      this.expanded.delete(index);
+    } else {
+      if (this.collapsing) {
+        this.expanded.clear();
+      }
+      this.expanded.add(index);
+    }
+  }
 
   educationList: Array<IEducationModel> = [
     {
@@ -27,7 +45,8 @@ export class EducationSectionComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

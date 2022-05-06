@@ -3,20 +3,20 @@
 @import './src/assets/styles/variables/vars';
 
 .wrapper {
-  margin: rem(26px) rem(100px) 0;
+  margin: rem(36px) rem(100px) 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 
   @media only screen and (max-width: $large) {
-    margin: 0 0 rem(26px);
-    padding: rem(16px);
+    margin: 0;
+    padding: rem(16px) rem(16px) 0;
     border-radius: 0 0 var(--radius-32) var(--radius-32) !important;
   }
 
   @media only screen and (max-width: $medium) {
-    margin: 0 0 rem(26px);
-    padding: rem(10px);
+    margin: 0;
+    padding: rem(10px) rem(10px) 0;
   }
 }
 
@@ -37,14 +37,6 @@
 
   @media only screen and (max-width: $large) {
     padding: rem(14px);
-  }
-
-  @media only screen and (max-width: $medium) {
-    padding: rem(10px);
-  }
-
-  @media only screen and (max-width: $small) {
-    padding: rem(6px);
   }
 }
 

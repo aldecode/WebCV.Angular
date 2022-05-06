@@ -5,13 +5,15 @@ import { SharedModule } from '../../shared/shared.module';
 import { EducationSectionComponent } from './education-section/education-section.component';
 import { ExperienceSectionComponent } from './experience-section/experience-section.component';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
+import { SkillsSectionComponent } from './skills-section/skills-section.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     EducationSectionComponent,
     ExperienceSectionComponent,
-    AboutMeSectionComponent
+    AboutMeSectionComponent,
+    SkillsSectionComponent
   ],
   imports: [
     CommonModule,

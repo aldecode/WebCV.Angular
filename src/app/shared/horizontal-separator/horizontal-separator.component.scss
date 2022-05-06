@@ -1,12 +1,10 @@
-@import './src/assets/styles/variables/media';
-@import './src/assets/styles/variables/mixins';
-@import './src/assets/styles/variables/vars';
+@import './src/assets/styles/utility';
 
 div {
   background: var(--color-dark-separator);
-  margin: rem(26px) 0;
+  margin: rem(26px) rem(26px);
   height: 1px;
-  width: 100%;
+  width: auto;
 
   @media only screen and (max-width: $medium) {
     margin: 0;

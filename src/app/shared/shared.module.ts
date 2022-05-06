@@ -18,13 +18,14 @@ import { VerticalSeparatorComponent } from './vertical-separator/vertical-separa
     HorizontalSeparatorComponent,
     VerticalSeparatorComponent,
   ],
-  exports: [
-    CommonModule,
-    FormsModule,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent
-  ],
+    exports: [
+        CommonModule,
+        FormsModule,
+        HeaderComponent,
+        FooterComponent,
+        SidebarComponent,
+        VerticalSeparatorComponent
+    ],
   imports: [
     CommonModule,
     AppRoutingModule,

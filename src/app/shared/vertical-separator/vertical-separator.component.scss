@@ -1,6 +1,4 @@
-@import './src/assets/styles/variables/media';
-@import './src/assets/styles/variables/mixins';
-@import './src/assets/styles/variables/vars';
+@import './src/assets/styles/utility';
 
 div {
   background: var(--color-dark-separator);
