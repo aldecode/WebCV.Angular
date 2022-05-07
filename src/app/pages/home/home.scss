@@ -1,8 +1,8 @@
 @import '../../../assets/styles/utility';
 
 section {
-  padding: rem(26px);
   margin-bottom: rem(18px);
+  @extend .box-shadow-16;
 
   @media only screen and (max-width: $medium) {
     margin-bottom: rem(14px);
@@ -73,8 +73,8 @@ section {
     &-date {
       &::before {
         color: var(--color-dark-paragraph);
-        margin: 0 rem(2px);
-        content: ' | ';
+        margin: 0 rem(4px);
+        content: '|';
         text-shadow: none;
       }
     }

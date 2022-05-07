@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: rem(36px);
   margin-bottom: rem(20px);
+  margin-top: 0;
   position: relative;
 
   &::before {
@@ -87,4 +88,10 @@ p {
 
 i {
   color: var(--color-dark-heading)
+}
+
+input, textarea {
+  font-size: rem(15px);
+  color: var(--color-dark-paragraph);
+  font-family: var(--font-family);
 }

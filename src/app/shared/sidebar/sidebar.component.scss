@@ -47,13 +47,14 @@ aside {
     .img-wrapper {
       padding: 20px;
       border-radius: var(--radius-20);
+      /*background-color: var(--color-dark-block-background);
       box-shadow:
         0 0 3.4px rgba(0, 0, 0, 0.033),
         0 0 7px rgba(0, 0, 0, 0.063),
         0 0 11.7px rgba(0, 0, 0, 0.091),
         0 0 20px rgba(0, 0, 0, 0.119),
         0 0 48px rgba(0, 0, 0, 0.15);
-
+*/
       @media only screen and (min-width: $large-xl) {
         margin: 0 3em;
       }
@@ -93,12 +94,12 @@ aside {
     }
 
     .position-title {
+      @extend .box-shadow-8;
       font-size: 14px;
       margin: 0 auto;
       padding: 0.6em 1.2em;
       width: max-content;
       color: var(--color-dark-heading);
-      background-color: var(--color-dark-block-background);
       text-align: center;
       vertical-align: baseline;
       border-radius: var(--radius-8);
@@ -137,7 +138,7 @@ aside {
         }
 
         .icon-box {
-          background-color: var(--color-dark-block-background);
+          @extend .box-shadow-8;
           display: inline-flex;
           align-items: center;
           justify-content: center;

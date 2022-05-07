@@ -1,10 +1,10 @@
-<aside class="glass-dark">
+<aside>
   <div class="aside-heading">
     <div class="img-wrapper">
       <img src="./assets/images/my-emoji.png" alt="Character">
     </div>
     <h2>{{sidebarInfo.firstName}} {{sidebarInfo.lastName}}</h2>
-    <span class="glass-dark position-title">{{sidebarInfo.positionTitle}}</span>
+    <span class="dark-block position-title">{{sidebarInfo.positionTitle}}</span>
   </div>
 
   <app-vertical-separator></app-vertical-separator>
@@ -13,7 +13,7 @@
   <div class="aside-body text-center">
     <ul>
       <li *ngIf="sidebarInfo.positionTitle">
-        <div class="icon-box">
+        <div class="icon-box dark-block">
           <i class="fa-solid fa-map-pin"></i>
         </div>
         <div>
@@ -22,7 +22,7 @@
         </div>
       </li>
       <li *ngIf="sidebarInfo.email">
-        <div class="icon-box">
+        <div class="icon-box dark-block">
           <i class="fa-solid fa-at"></i>
         </div>
         <div>
@@ -31,7 +31,7 @@
         </div>
       </li>
       <li *ngIf="sidebarInfo.phone">
-        <div class="icon-box">
+        <div class="icon-box dark-block">
           <i class="fa-solid fa-phone"></i>
         </div>
         <div>
@@ -40,7 +40,7 @@
         </div>
       </li>
       <li *ngIf="sidebarInfo.telegram">
-        <div class="icon-box">
+        <div class="icon-box dark-block">
           <i class="fa-solid fa-paper-plane"></i>
         </div>
         <div>
