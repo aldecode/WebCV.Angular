@@ -15,18 +15,20 @@ section {
 
   .section-item {
     border-left: rem(2px) solid var(--color-dark-separator);
-    padding-left: rem(16px);
-    padding-bottom: rem(12px);
+    padding: rem(6px) rem(16px);
     position: relative;
+    cursor: pointer;
 
     i {
       opacity: 0;
       text-align: center;
-      margin: auto 0;
+      margin: auto rem(24px) auto 0;
     }
 
     &:hover {
-      cursor: pointer;
+      border-left: rem(2px) solid var(--color-dark-paragraph);
+      transition: border-left 0.25s ease-in;
+
       i {
         opacity: 1;
         transition: opacity 0.1s ease-out;
@@ -43,15 +45,12 @@ section {
       @extend .box-glow-12;
       background-color: var(--color-dark-heading);
       left: -7px;
+      top: 0;
     }
 
     &:last-child {
-      border: 0;
       padding-bottom: 0;
-
-      &::before {
-        left: -5px;
-      }
+      border-radius: 0 var(--radius-12) var(--radius-12) var(--radius-12);
     }
 
     h3 {

@@ -1,10 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienceModel } from '../interfaces/experienceModel';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-experience-section',
   templateUrl: './experience-section.component.html',
-  styleUrls: ['./experience-section.component.scss']
+  styleUrls: ['./experience-section.component.scss'],
+  animations: [
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({height: '0px', opacity: '0', visibility: 'hidden', overflow: 'hidden'}),
+        animate('.35s ease-out', style({height: '*'})),
+        animate('.15s ease-in', style({opacity: '1',visibility: 'visible'})),
+      ]),
+      transition(':leave', [
+        animate('.15s ease-out', style({opacity: '0', visibility: 'hidden'})),
+        animate('.15s ease-out', style({height: '0px'})),
+      ])
+    ])
+  ]
 })
 export class ExperienceSectionComponent implements OnInit {
 
@@ -83,10 +97,20 @@ export class ExperienceSectionComponent implements OnInit {
       }
     }
   ]
+  allToggles: Array<boolean> = new Array(this.experienceList.length).fill(false)
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
+  public toggleShow(index: number): void {
+    if (!this.allToggles[index]) {
+      this.allToggles = this.allToggles.map(_ => false)
+      this.allToggles[index] = !this.allToggles[index]
+    }
+    else {
+      this.allToggles[index] = !this.allToggles[index]
+    }
+
+  }
 }

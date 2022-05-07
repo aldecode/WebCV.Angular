@@ -1,7 +1,7 @@
 <section class="dark-block">
   <h2>Experience</h2>
-  <div *ngFor="let experience of experienceList" class="section-item">
-    <div class="section-item-head">
+  <div *ngFor="let experience of experienceList; let i = index" class="section-item">
+    <div class="section-item-head" (click)="toggleShow(i)">
       <div>
         <h3 class="section-item-title">{{experience.positionTitle}}</h3>
         <span>{{experience.company}}</span>
@@ -11,7 +11,7 @@
         <i class="fa-angle-down fa-solid"></i>
       </div>
     </div>
-    <div class="section-item-content">
+    <div *ngIf="allToggles[i]" class="section-item-content" [@slideInOut] = "allToggles[i]">
 
       <h5 *ngIf="experience.description.responsibilities">Responsibilities:</h5>
       <ul *ngIf="experience.description.responsibilities">

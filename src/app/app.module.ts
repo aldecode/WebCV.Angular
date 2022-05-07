@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './pages/home/home.module';
 import { PortfolioModule } from './pages/portfolio/portfolio.module';
 import { BlogModule } from './pages/blog/blog.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BlogModule } from './pages/blog/blog.module';
     AppRoutingModule,
     HomeModule,
     PortfolioModule,
-    BlogModule
+    BlogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
