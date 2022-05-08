@@ -30,7 +30,7 @@ import { VerticalSeparatorComponent } from './vertical-separator/vertical-separa
     CommonModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class SharedModule {

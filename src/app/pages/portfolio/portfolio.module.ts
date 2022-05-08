@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioPageComponent } from './portfolio-page/portfolio-page.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -9,7 +10,8 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
     PortfolioPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class PortfolioModule { }

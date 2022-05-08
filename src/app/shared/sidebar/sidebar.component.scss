@@ -47,16 +47,21 @@ aside {
     .img-wrapper {
       padding: 20px;
       border-radius: var(--radius-20);
-      /*background-color: var(--color-dark-block-background);
-      box-shadow:
-        0 0 3.4px rgba(0, 0, 0, 0.033),
-        0 0 7px rgba(0, 0, 0, 0.063),
-        0 0 11.7px rgba(0, 0, 0, 0.091),
-        0 0 20px rgba(0, 0, 0, 0.119),
-        0 0 48px rgba(0, 0, 0, 0.15);
+
+      //background-color: var(--color-dark-block-background);
+      /*box-shadow:
+        0 0 3.4px rgba(10, 10, 10, 0.03),
+        0 0 7px rgba(10, 10, 10, 0.06),
+        0 0 11.7px rgba(10, 10, 10, 0.1),
+        0 0 20px rgba(10, 10, 10, 0.22),
+        0 0 48px rgba(10, 10, 10, 0.25);
 */
       @media only screen and (min-width: $large-xl) {
         margin: 0 3em;
+      }
+
+      @media only screen and (max-width: $medium) {
+        padding: 32px;
       }
 
       img {

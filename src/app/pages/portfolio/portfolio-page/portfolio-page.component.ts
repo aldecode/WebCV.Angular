@@ -12,4 +12,7 @@ export class PortfolioPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getRandomNum(): number {
+    return Math.floor(Math.random() * 100)
+  }
 }

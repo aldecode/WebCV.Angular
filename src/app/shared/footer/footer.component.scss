@@ -20,11 +20,10 @@ footer {
 
   @media only screen and (max-width: $medium) {
     margin-top: rem(18px);
-    padding: rem(10px);
   }
 
   @media only screen and (max-width: $small) {
-    padding: rem(6px);
+    padding: rem(16px);
   }
 
 

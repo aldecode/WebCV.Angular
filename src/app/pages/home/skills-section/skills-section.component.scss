@@ -26,7 +26,7 @@ section {
       }
     }
 
-    @media only screen and (max-width: $small) {
+    @media only screen and (max-width: $medium) {
       display: flex;
       flex-wrap: wrap;
     }
@@ -94,7 +94,6 @@ section {
           margin-bottom: 0;
         }
       }
-
     }
   }
 }

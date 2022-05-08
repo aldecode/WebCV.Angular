@@ -1,19 +1,7 @@
 @import '../../../assets/styles/utility';
 
 section {
-  margin-bottom: rem(18px);
-  @extend .box-shadow-16;
-
-  @media only screen and (max-width: $medium) {
-    margin-bottom: rem(14px);
-  }
-
-  @media only screen and (max-width: $small) {
-    padding: rem(16px);
-    margin-bottom: rem(12px);
-  }
-
-  .section-item {
+    .section-item {
     border-left: rem(2px) solid var(--color-dark-separator);
     padding: rem(6px) rem(16px);
     position: relative;
@@ -23,6 +11,13 @@ section {
       opacity: 0;
       text-align: center;
       margin: auto rem(24px) auto 0;
+
+
+      @media only screen and (max-width: $large) {
+        opacity: 0.3;
+        font-size: 12px;
+        margin: auto 0 auto 0;
+      }
     }
 
     &:hover {
@@ -31,7 +26,7 @@ section {
 
       i {
         opacity: 1;
-        transition: opacity 0.1s ease-out;
+        transition: opacity 0.25s ease-out;
       }
     }
 
