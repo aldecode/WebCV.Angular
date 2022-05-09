@@ -4,17 +4,18 @@
       <i class="fa-solid fa-house"></i>
       <span>Resume</span>
     </li>
-    <li routerLink="/portfolio">
+    <li routerLink="{{isPortfolioDone ? '/portfolio' : null}}" class="soon">
       <i class="fa-solid fa-briefcase"></i>
       <span>Portfolio</span>
     </li>
-    <li routerLink="/blog">
+    <li routerLink="{{isBlogDOne? '/blog' : null}}" class="soon">
       <i class="fa-solid fa-rss"></i>
-      <span>Blog</span>
+      <span >Blog</span>
     </li>
-    <li class="download-button-li">
+    <li class="download-button-li soon" >
       <button class="btn-download">
-        <i class="fa-solid fa-angles-down"></i> Download CV
+        <i class="fa-solid fa-angles-down"></i>
+        <span>Download CV</span>
       </button>
       <button class="btn-icon">
         <i class="fa-solid fa-angles-down"></i>
