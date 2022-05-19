@@ -47,6 +47,7 @@ aside {
     .img-wrapper {
       padding: 20px;
       border-radius: var(--radius-20);
+      margin: 0 1vw;
 
       //background-color: var(--color-dark-block-background);
       /*box-shadow:
@@ -56,12 +57,14 @@ aside {
         0 0 20px rgba(10, 10, 10, 0.22),
         0 0 48px rgba(10, 10, 10, 0.25);
 */
-      @media only screen and (min-width: $large-xl) {
-        margin: 0 3em;
-      }
 
       @media only screen and (max-width: $medium) {
+        margin: 0 10vw;
         padding: 32px;
+      }
+
+      @media only screen and (max-width: $small) {
+        margin: 0;
       }
 
       img {
@@ -150,6 +153,7 @@ aside {
           margin-right: rem(16px);
           border-radius: var(--radius-12);
           width: rem(48px);
+
           i {
             text-align: center;
             margin: 0 auto;

@@ -9,13 +9,13 @@ import { animate, style, transition, trigger } from '@angular/animations';
   animations: [
     trigger('slideInOut', [
       transition(':enter', [
-        style({height: '0px', opacity: '0', visibility: 'hidden', overflow: 'hidden'}),
-        animate('.35s ease-out', style({height: '*'})),
-        animate('.15s ease-in', style({opacity: '1',visibility: 'visible'})),
+        style({height: '0px', opacity: '0'}),
+        animate('.4s ease-out', style({height: '*'})),
+        animate('.25s linear', style({opacity: '1'})),
       ]),
       transition(':leave', [
-        animate('.15s ease-out', style({opacity: '0', visibility: 'hidden'})),
-        animate('.15s ease-out', style({height: '0px'})),
+        animate('.25s linear', style({opacity: '0'})),
+        animate('.4s ease-in', style({height: '0px'})),
       ])
     ])
   ]
@@ -75,7 +75,7 @@ export class ExperienceSectionComponent implements OnInit {
           'Created my own WebAPI pet-project from scratch.'
         ],
         aboutProject: 'AutoHubAPI - Web API that provides monolithic multi-layered architecture Back-End functionality for used cars auction application. The main purpose of this API was to be a playground for me to learn and practice new knowledge.',
-        toolsAndTechnologies: ' NET 6 & C# 10, ASP.NET Web API, EF Core, JWT, Identity, xUnit, FluentAssertions, AutoFixture, Moq, AutoMapper, FluentValidation, BCrypt, Swagger + SwaggerUI, Swashbuckle'
+        toolsAndTechnologies: '.NET 6 & C# 10, ASP.NET Web API, EF Core, JWT, Identity, xUnit, FluentAssertions, AutoFixture, Moq, AutoMapper, FluentValidation, BCrypt, Swagger + SwaggerUI, Swashbuckle'
       }
     },
     {
@@ -89,11 +89,11 @@ export class ExperienceSectionComponent implements OnInit {
         responsibilities: [
           'Designed project via UML diagrams (Use Case, Class Diagram, DB Diagram, etc.)',
           'Developed common functionality (controllers, services, etc.)',
-          'Writed unit-tests',
+          'Wrote unit-tests',
           'Created UI for the whole website via Figma and implemented that via HTML + CSS (Bootstrap 5, Vanilla)'
         ],
         aboutProject: 'A training full-stack web application that provides car rental service using React as a front-end, & monolithic three-layer architecture ASP.NET Web API as Back-end. The main purpose of this app was to learn the developing process, gain knowledge in developing the back-end on ASP.NET, and practice developing React front-end.',
-        toolsAndTechnologies: 'C# 9.0, ASP.NET 5, Web API, MS SQL, Azure, Azure DevOps, HTML, CSS, Bootstrap, React, Git/GitHub, Rider, WebStorn DataGrip, Swagger'
+        toolsAndTechnologies: 'C# 9.0, ASP.NET 5, Web API, MS SQL, Azure, Azure DevOps, HTML, CSS, Bootstrap, React, Git/GitHub, Rider, WebStorm DataGrip, Swagger'
       }
     }
   ]

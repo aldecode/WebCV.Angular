@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isPortfolioDone: boolean = false;
-  isBlogDOne: boolean = false;
+  isPortfolioDone: boolean = true;
+  isBlogDone: boolean = false;
   isDownloadCVDone = false;
 
   constructor() { }

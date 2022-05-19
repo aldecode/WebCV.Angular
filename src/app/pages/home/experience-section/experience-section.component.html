@@ -1,7 +1,7 @@
 <section class="dark-block">
   <h2>Experience</h2>
-  <div *ngFor="let experience of experienceList; let i = index" class="section-item">
-    <div class="section-item-head" (click)="toggleShow(i)">
+  <div *ngFor="let experience of experienceList; let i = index" class="section-item" (click)="toggleShow(i)">
+    <div class="section-item-head">
       <div>
         <h3 class="section-item-title">{{experience.positionTitle}}</h3>
         <span>{{experience.company}}</span>

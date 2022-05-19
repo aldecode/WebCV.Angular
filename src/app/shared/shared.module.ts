@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HorizontalSeparatorComponent } from './horizontal-separator/horizontal-separator.component';
 import { VerticalSeparatorComponent } from './vertical-separator/vertical-separator.component';
+import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,20 +20,25 @@ import { VerticalSeparatorComponent } from './vertical-separator/vertical-separa
     SidebarComponent,
     HorizontalSeparatorComponent,
     VerticalSeparatorComponent,
+    ModalDialogComponent,
   ],
-    exports: [
-        CommonModule,
-        FormsModule,
-        HeaderComponent,
-        FooterComponent,
-        SidebarComponent,
-        VerticalSeparatorComponent
-    ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    VerticalSeparatorComponent,
+    MatDialogModule,
+    ModalDialogComponent
+  ],
   imports: [
     CommonModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
+    MatDialogModule,
+    MatButtonModule,
   ]
 })
 export class SharedModule {

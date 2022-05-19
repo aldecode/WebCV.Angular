@@ -1,0 +1,92 @@
+@import './src/assets/styles/utility';
+
+::ng-deep .mat-dialog-container {
+  background-color: var(--color-dark-opaque-background);
+  border-radius: var(--radius-20);
+  max-width: 40vw;
+  margin: rem(32px) 0;
+  color: var(--color-dark-paragraph)
+}
+
+::ng-deep .cdk-overlay-dark-backdrop {
+  backdrop-filter: blur(12px);
+}
+
+::ng-deep .cdk-overlay-pane {
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar { /* Hide scroll in Safari and Chrome */
+    display: none;
+  }
+
+}
+
+.modal-header {
+  display: flex;
+  margin: 0 0 rem(16px);
+
+  h3 {
+    margin: 0;
+  }
+
+  .close-dialog-button {
+    padding: 0;
+
+    margin-left: auto;
+    border-radius: var(--radius-8);
+    color: var(--color-dark-heading);
+    font-weight: 500;
+    border: none;
+    background: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      @extend .text-glow-12;
+      background-color: rgba(0, 0, 0, 0.25);
+      transition: all .05s linear;
+      cursor: pointer;
+    }
+
+    i {
+      margin: rem(8px);
+
+      &:before {
+        width: rem(16px);
+        height: rem(16px);
+        display: block;
+      }
+    }
+  }
+}
+
+.modal-body {
+  img {
+    border-radius: var(--radius-20);
+    width: 100%;
+  }
+
+  .technology-wrapper {
+    margin: rem(4px) 0;
+
+    display: flex;
+    gap: 20px;
+
+    .technology-badge {
+      font-size: 14px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 1;
+      vertical-align: baseline;
+      border-radius: var(--radius-12);
+      background-color: var(--color-dark-wrapper-background);
+      padding: rem(6px) rem(10px);
+    }
+  }
+}
+
+
