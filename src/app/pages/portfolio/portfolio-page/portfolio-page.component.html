@@ -1,14 +1,6 @@
 <section class="dark-block">
   <h1>Portfolio</h1>
   <div class="grid-wrapper">
-    <div (click)="openProjectDetails(project)" *ngFor="let project of projectsList;" class="card">
-      <div class="img-wrap">
-        <img src="{{project.imagePath}}">
-      </div>
-      <div class="card-caption">
-        <h3 class="card-title">{{project.name}}</h3>
-        <span class="card-category">{{project.summary}}</span>
-      </div>
-    </div>
+    <app-portfolio-item [project]="project" *ngFor="let project of projectsList"></app-portfolio-item>
   </div>
 </section>

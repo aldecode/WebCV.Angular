@@ -6,7 +6,6 @@
 @import 'variables/mixins';
 @import 'variables/vars';
 
-
 body {
   background-color:#ff99b8;
   background-image:
@@ -17,9 +16,6 @@ body {
     radial-gradient(at 72% 71%, hsla(318,65%,78%,1) 0px, transparent 50%),
     radial-gradient(at 23% 89%, hsla(37,70%,67%,1) 0px, transparent 50%),
     radial-gradient(at 52% 60%, hsla(74,99%,66%,1) 0px, transparent 50%);
-  /*background-color: hsl(0, 0%, 100%);
-  background-image: url("../images/bg-2.jpg") ;*/
-  //animation: mix-bg 30s ease infinite;
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -41,4 +37,22 @@ section {
     padding: rem(16px);
     margin-bottom: rem(12px);
   }
+}
+
+* {
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @extend .box-shadow-8;
+  background: var(--color-dark-wrapper-background);
+  border-radius: var(--radius-8);
 }

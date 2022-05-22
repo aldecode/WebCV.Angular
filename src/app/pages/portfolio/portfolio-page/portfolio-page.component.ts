@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectModel } from '../interfaces/projectModel';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { ModalDialogComponent } from '../../../shared/modal-dialog/modal-dialog.component';
 
 @Component({
   selector: 'app-portfolio-page',
@@ -9,13 +7,12 @@ import { ModalDialogComponent } from '../../../shared/modal-dialog/modal-dialog.
   styleUrls: ['./portfolio-page.component.scss']
 })
 export class PortfolioPageComponent implements OnInit {
-
   projectsList: Array<ProjectModel> = [
     {
       id: 1,
       name: "AutoHub REST API",
       summary: "Basic CRUD REST API for manage auto auction business.",
-      technologies: ["C#", "ASP.NET Web API", "EF Core 6", ".NET Identity", "xUnit", "MS SQL"],
+      technologies: ["C#", "ASP.NET Web API", "ASP.NET Identity", "EF Core 6", "xUnit", "MS SQL"],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, tortor nec convallis consequat, mi enim vestibulum purus, non ultricies massa lectus vitae ipsum. Praesent ut diam nec ex elementum tristique. Nulla sodales sit amet nibh a pretium. Vestibulum id lobortis tellus. Aliquam blandit nunc quis egestas dictum. Aliquam vitae eros magna. In iaculis neque quis erat cursus, id convallis elit sollicitudin. Suspendisse potenti. Vivamus scelerisque id tortor at ornare.\n" +
         "\n" +
         "Pellentesque a consequat erat, et tincidunt augue. Quisque imperdiet porta quam molestie imperdiet. Nam vitae vulputate metus. Nulla augue leo, pharetra quis risus nec, feugiat eleifend urna. Phasellus at ultrices nisl, sed rutrum nisi. Ut luctus non urna nec vehicula. Etiam malesuada ligula magna. Donec pulvinar purus id sagittis sollicitudin. Integer fermentum sapien in faucibus cursus. Nullam vitae magna sed urna tempor mattis.\n" +
@@ -29,7 +26,7 @@ export class PortfolioPageComponent implements OnInit {
       id: 2,
       name: "The Resume",
       summary: "Angular application that represents me and my experience",
-      technologies: ["Angular", "TypeScript", "SCSS"],
+      technologies: ["Angular", "TypeScript", "SCSS", "MongoDb", "Node.js"],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, tortor nec convallis consequat, mi enim vestibulum purus, non ultricies massa lectus vitae ipsum. Praesent ut diam nec ex elementum tristique. Nulla sodales sit amet nibh a pretium. Vestibulum id lobortis tellus. Aliquam blandit nunc quis egestas dictum. Aliquam vitae eros magna. In iaculis neque quis erat cursus, id convallis elit sollicitudin. Suspendisse potenti. Vivamus scelerisque id tortor at ornare.\n" +
         "\n" +
         "Pellentesque a consequat erat, et tincidunt augue. Quisque imperdiet porta quam molestie imperdiet. Nam vitae vulputate metus. Nulla augue leo, pharetra quis risus nec, feugiat eleifend urna. Phasellus at ultrices nisl, sed rutrum nisi. Ut luctus non urna nec vehicula. Etiam malesuada ligula magna. Donec pulvinar purus id sagittis sollicitudin. Integer fermentum sapien in faucibus cursus. Nullam vitae magna sed urna tempor mattis.\n" +
@@ -41,17 +38,7 @@ export class PortfolioPageComponent implements OnInit {
     }
   ]
 
-  constructor(private dialog: MatDialog) {
+  constructor() { }
 
-  }
-
-  ngOnInit(): void {
-  }
-
-  openProjectDetails(project: ProjectModel) {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.data = project;
-    dialogConfig.panelClass = 'dialog'
-    this.dialog.open(ModalDialogComponent, dialogConfig);
-  }
+  ngOnInit(): void { }
 }

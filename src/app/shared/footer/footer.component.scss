@@ -1,15 +1,10 @@
 @import '../../../assets/styles/utility';
 
 footer {
+  @extend .container-shadow;
   background-color: var(--color-dark-wrapper-background);
   backdrop-filter: blur(20px) saturate(0);
   -webkit-backdrop-filter: blur(20px) saturate(0);
-  box-shadow:
-    0 0 7.7px rgba(0, 0, 0, 0.033),
-    0 0 16.1px rgba(0, 0, 0, 0.063),
-    0 0 26.9px rgba(0, 0, 0, 0.091),
-    0 0 45.9px rgba(0, 0, 0, 0.119),
-    0 0 110px rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-20) var(--radius-20) 0 0;
   margin-top: rem(26px);
   padding: rem(18px);
@@ -49,63 +44,52 @@ footer {
       "B B";
     }
 
+    .contact-form-item {
+      @extend .box-shadow-16;
+      background-color: var(--color-dark-block-background);
+      border: 0;
+      border-radius: var(--radius-8);
+      color: var(--color-dark-paragraph);
+      padding: rem(12px);
+      outline: none;
+
+      @media only screen and (max-width: $medium) {
+        border-radius: var(--radius-12);
+      }
+    }
+
     .name-input {
       grid-area: N;
-      //border: 1px solid var(--color-dark-border);
-      background-color: var(--color-dark-block-background);
     }
 
     .surname-input {
       grid-area: S;
-      //border: 1px solid var(--color-dark-border);
-      background-color: var(--color-dark-block-background);
     }
 
     .message-area {
       grid-area: M;
-      //border: 1px solid var(--color-dark-border);
-      background-color: var(--color-dark-block-background);
     }
 
     .submit-button {
-      background-color: var(--color-dark-block-background);
       grid-area: B;
-      border: 0 solid var(--color-dark-border);
-      border-radius: var(--radius-8);
-      color: var(--color-dark-paragraph);
       margin-bottom: rem(64px);
-      padding: rem(12px);
 
       &:hover {
         @extend .text-glow-12;
-        //text-shadow: 0 0 10px var(--color-dark-neon-glow);
         filter: brightness(1.5);
         cursor: pointer;
         transition: all .1s ease-out;
       }
 
       &:active {
-        //filter: brightness(1.75);
         @extend .text-glow-16;
-        box-shadow: 0 0 8px var(--color-dark-block-background);
+        font-weight: 400;
         transition: all .05s ease-in;
-      }
-
-      @media only screen and (max-width: $medium) {
-        border-radius: var(--radius-12);
       }
     }
 
     input, textarea {
-      outline: none;
-      padding: rem(12px);
-      border-radius: var(--radius-8);
       resize: none;
-      border: 0 solid var(--color-dark-border);
-
-      @media only screen and (max-width: $medium) {
-        border-radius: var(--radius-12);
-      }
 
       &:-webkit-autofill {
         -webkit-text-fill-color: var(--color-dark-paragraph);
@@ -115,12 +99,11 @@ footer {
 
       &:hover {
         filter: brightness(1.25);
-        transition: all .1s ease-out;
+        transition: all .15s ease-out;
       }
 
       &:focus {
-        box-shadow: 0 0 8px var(--color-dark-block-background);
-        filter: brightness(1.90);
+        filter: brightness(1.25);
         transition: all .15s ease-out;
       }
 

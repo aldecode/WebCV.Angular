@@ -1,4 +1,6 @@
 <section class="dark-block">
   <h1>Blog</h1>
-  <div></div>
+  <div>
+    <app-blog-item [article]="article" *ngFor="let article from articles"></app-blog-item>
+  </div>
 </section>

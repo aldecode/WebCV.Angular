@@ -3,24 +3,30 @@
 ::ng-deep .mat-dialog-container {
   background-color: var(--color-dark-opaque-background);
   border-radius: var(--radius-20);
-  max-width: 40vw;
-  margin: rem(32px) 0;
-  color: var(--color-dark-paragraph)
+  margin: rem(32px) 25%;
+  color: var(--color-dark-paragraph);
+
+  @media only screen and (max-width: $large-xxl) {
+    margin: rem(32px) 15%;
+  }
+
+  @media only screen and (max-width: $large) {
+    margin: rem(24px) 5%;
+  }
+
+  /*@media only screen and (max-width: $medium) {
+    margin: 0;
+    border-radius: 0;
+  }*/
 }
 
 ::ng-deep .cdk-overlay-dark-backdrop {
   backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 ::ng-deep .cdk-overlay-pane {
-  overflow-y: auto;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-
-  &::-webkit-scrollbar { /* Hide scroll in Safari and Chrome */
-    display: none;
-  }
-
+  overflow-y: scroll;
 }
 
 .modal-header {
@@ -33,7 +39,6 @@
 
   .close-dialog-button {
     padding: 0;
-
     margin-left: auto;
     border-radius: var(--radius-8);
     color: var(--color-dark-heading);
@@ -71,21 +76,35 @@
   }
 
   .technology-wrapper {
-    margin: rem(4px) 0;
-
+    margin: rem(8px) 0;
+    justify-content: space-between;
     display: flex;
-    gap: 20px;
+    gap: rem(18px);
 
     .technology-badge {
+      @extend .box-shadow-8;
+      min-width: fit-content;
+      width: 100%;
       font-size: 14px;
       text-align: center;
       font-weight: 300;
       line-height: 1;
       vertical-align: baseline;
-      border-radius: var(--radius-12);
+      border-radius: var(--radius-8);
       background-color: var(--color-dark-wrapper-background);
       padding: rem(6px) rem(10px);
     }
+  }
+
+  .content {
+    /*overflow-y: auto;
+    -ms-overflow-style: none;  !* Internet Explorer 10+ *!
+    scrollbar-width: none;  !* Firefox *!
+
+    &::-webkit-scrollbar { !* Hide scroll in Safari and Chrome *!
+      display: none;
+    }
+*/
   }
 }
 
