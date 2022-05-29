@@ -9,9 +9,12 @@ import { ArticleModel } from '../interfaces/articleModel';
 export class BlogItemComponent implements OnInit {
   @Input() article!: ArticleModel;
 
-  constructor() { }
+  constructor() {  }
 
   ngOnInit(): void {
   }
 
+  getRandomImageUrl(){
+    return "https://random.imagecdn.app/300/150?cache=" + new Date().getTime()
+  }
 }

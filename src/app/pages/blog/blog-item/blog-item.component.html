@@ -1,13 +1,13 @@
 <div class="article dark-block">
-  <img src="https://random.imagecdn.app/300/150" alt="">
+  <img src="{{getRandomImageUrl()}}" alt="">
   <div class="article-body">
     <h3>{{article.headline}}</h3>
     <p>{{article.summary}}</p>
     <div class="article-body-footer">
       <div class="topics">
-        <span>.NET</span>
+        <span *ngFor="let topic of article.topics">{{topic}}</span>
       </div>
-      <span class="publish-date">02-02-2022</span>
+      <span class="publish-date">{{article.publishDate.toLocaleDateString('en-US', {day: 'numeric', month: 'long', year: 'numeric'})}}</span>
     </div>
   </div>
 </div>

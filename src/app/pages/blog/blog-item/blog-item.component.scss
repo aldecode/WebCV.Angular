@@ -4,9 +4,9 @@
 .article {
   @extend .box-shadow-16;
   display: flex;
-  padding: rem(12px);
-  column-gap: rem(12px);
-  margin-bottom: rem(12px);
+  padding: rem(16px);
+  column-gap: rem(16px);
+  margin-bottom: rem(16px);
 
 
   img {
@@ -24,26 +24,43 @@
     width: 100%;
 
     h3 {
-
+      margin-top: 0;
     }
 
     p {
       display: block;
       height: auto;
+      margin-bottom: rem(12px);
     }
 
     &-footer {
       display: flex;
       margin-top: auto;
+      gap: rem(12px);
 
       .topics {
-        width: 70%;
-        flex: 3 1 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: rem(12px);
+
+        span {
+          @extend .box-shadow-8;
+          min-width: fit-content;
+          width: 100%;
+          font-size: 14px;
+          text-align: center;
+          font-weight: 300;
+          line-height: 1;
+          vertical-align: baseline;
+          border-radius: var(--radius-8);
+          background-color: var(--color-dark-wrapper-background);
+          padding: rem(6px) rem(10px);
+        }
       }
 
       .publish-date {
         text-align: right;
-        width: 30%;
+        width: auto;
         flex: 1 1 auto;
       }
     }

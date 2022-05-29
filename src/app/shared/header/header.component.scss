@@ -50,8 +50,7 @@ header {
             font-weight: 400;
             font-size: 11px;
             padding: 0 4px;
-            margin: auto auto;
-            margin-left: rem(6px);
+            margin: auto auto auto rem(6px);
             background-color: rgba(0, 187, 255, 0.3);
             border-radius: 4px;
             border: 1px solid var(--color-dark-neon-glow);
@@ -61,6 +60,7 @@ header {
       }
 
       &:hover {
+        @extend .box-shadow-16;
         @extend .text-glow-12;
         background-color: rgba(0, 0, 0, 0.25);
         transition: all .05s linear;

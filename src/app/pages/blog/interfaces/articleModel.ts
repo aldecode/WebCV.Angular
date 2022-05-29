@@ -3,5 +3,7 @@ export interface ArticleModel {
   headline: string,
   summary: string,
   content: string,
+  topics: string[],
+  publishDate: Date
   imagePath: string,
 }
