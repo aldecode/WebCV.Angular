@@ -1,0 +1,51 @@
+@import '../../../../assets/styles/utility';
+
+
+.article {
+  @extend .box-shadow-16;
+  display: flex;
+  padding: rem(12px);
+  column-gap: rem(12px);
+  margin-bottom: rem(12px);
+
+
+  img {
+    flex: 1 1 auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius-12);
+  }
+
+
+  &-body {
+    flex: 3 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h3 {
+
+    }
+
+    p {
+      display: block;
+      height: auto;
+    }
+
+    &-footer {
+      display: flex;
+      margin-top: auto;
+
+      .topics {
+        width: 70%;
+        flex: 3 1 auto;
+      }
+
+      .publish-date {
+        text-align: right;
+        width: 30%;
+        flex: 1 1 auto;
+      }
+    }
+  }
+}

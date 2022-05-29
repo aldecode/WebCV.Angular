@@ -34,7 +34,6 @@ export class SkillsSectionComponent implements OnInit {
         technology: 'Unit-Testing',
         level: 2
       }
-
     ],
     [
       {
